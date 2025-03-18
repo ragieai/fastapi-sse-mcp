@@ -1,10 +1,12 @@
 from fastapi import FastAPI
-from app.sse import sse
+from app.sse import create_sse_server
+from mcp.server.fastmcp import FastMCP
 
 app = FastAPI()
+mcp = FastMCP("example")
 
-# Mount the Starlette app to the FastAPI app
-app.mount("/", sse)
+# Mount the Starlette SSE server onto the FastAPI app
+app.mount("/", create_sse_server(mcp))
 
 
 @app.get("/")
