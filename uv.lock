@@ -121,7 +121,7 @@ standard = [
 ]
 
 [[package]]
-name = "fastapi-sse"
+name = "fastapi-sse-mcp"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
