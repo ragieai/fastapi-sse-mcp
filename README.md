@@ -23,20 +23,9 @@ This project showcases how to use Server-Sent Events (SSE) as a transport layer 
    cd fastapi-sse-mcp
    ```
 
-2. Create a virtual environment and install dependencies:
-   ```bash
-   uv venv
-   uv sync
-   ```
-
-   For development with additional dependencies, use:
+2. Install dependencies:
    ```bash
    uv sync --dev
-   ```
-
-3. Activate the virtual environment (optional, needed only to run commands directly):
-   ```bash
-   source .venv/bin/activate  # On Windows, use `.venv\Scripts\activate`
    ```
 
 ## Running the Application
